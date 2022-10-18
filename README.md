@@ -23,4 +23,15 @@ As described by [this link](https://packaging.python.org/en/latest/tutorials/pac
         Uploading (to test env) with: `python3 -m twine upload --repository testpypi dist/*`
     6.  Prepared another virtual environment and installed with
         `python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-package-srund`
-        It seem to work!
+        It seem to work! **Basics done!**
+
+### Dependencies
+
+A continuation from the previous section.
+
+Following [this](https://setuptools.pypa.io/en/latest/userguide/dependency_management.html)
+page for `setuptools`.
+
+    1.  Adding basic dependency `click` in the toml-file.
+    2.  Manually building the package and installing into a virtual environment
+        to confirm `click` is indeed installed together with the package.
